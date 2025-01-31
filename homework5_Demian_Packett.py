@@ -46,17 +46,23 @@
 bones = ["femur", "humerus", "hyoid", "tibia", "radius", "ulna"]
 print(bones)
 
-firstlastbone = bones[0:1]
-print("The first two items in the list are: {firstlastbone}.")
+first_bone = bones[0]
+second_bone = bones[1]
+third_bone = bones[2]
+fourth_bone = bones[3]
+fifth_bone = bones[4]
+sixth_bone = bones[5]
 
-first_two_bones = bones[:2]
-print(f"The first two items in the list are: {', '.join(first_two_bones)}.")
+print(f"The first two items in the list are: {first_bone}, {second_bone}.")
+
+first_and_second_bone = f"{first_bone}, {second_bone}"
+print(f"The first two items in the list are: {first_and_second_bone}.")
+
+print(f"The middle two items in the list are: {third_bone}, {fourth_bone}.")
 
 middle_start = (len(bones) - 1) // 2
 middle_slice = bones[middle_start:middle_start + 2]
 print(f"The middle two items in the list are: {', '.join(middle_slice)}.")
 
-first_bone = bones[0]
-last_bone = bones[5]
 
-print(f"The first and last items in the list are: {first_bone}, {last_bone}.")
+print(f"The first and last items in the list are: {first_bone}, {sixth_bone_bone}.")
