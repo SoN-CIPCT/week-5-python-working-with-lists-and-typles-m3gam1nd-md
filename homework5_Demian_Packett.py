@@ -1,3 +1,55 @@
+# Establishing 6 item list and printing it
+bones = ["femur", "humerus", "hyoid", "tibia", "radius", "ulna"]
+print(bones)
+
+first_bone = bones[0]
+second_bone = bones[1]
+third_bone = bones[2]
+fourth_bone = bones[3]
+fifth_bone = bones[4]
+sixth_bone = bones[5]
+
+# Printing the first two items using a slice
+print(f"The first two items in the list are: {bones[0]}, {bones[1]}.")
+
+# (alternate method) print(f"The first two items in the list are: {first_bone}, {second_bone}.")
+
+# (alternate method) first_and_second_bone = f"{first_bone}, {second_bone}"
+# print(f"The first two items in the list are: {first_and_second_bone}.")
+
+# Printing two middle items using a slice 
+middle_start = len(bones) // 2
+middle_slice = bones[middle_start - 1:middle_start + 1]
+print(f"The middle two items in the list are: {', '.join(middle_slice)}.")
+
+# (alternate method) print(f"The middle two items in the list are: {third_bone}, {fourth_bone}.")
+
+# Printing the first and last items using indexes
+print(f"The first and last items in the list are: {bones[0]}, {bones[-1]}.")
+
+# (alternate method) print(f"The first and last items in the list are: {first_bone}, {sixth_bone}.")
+
+# Initial menu as a tuple
+menu = ("spaghetti", "lasagna", "chicken alfredo", "bruschetta", "eggplant parmesan")
+
+# Printing of the original menu using a loop,  bolded menu name and title method for menu items
+print("\033[1mOriginal Menu:\033[0m")
+for item in menu:
+    print(item.title())
+
+# New menu with two items replaced
+revised_menu = ("spaghetti", "lasagna", "chicken alfredo", "pollo alla cacciatora", "osso buco")
+
+# Printing the revised menu using a loop, bolded menu name and title method for menu items
+print("\033[1mRevised Menu:\033[0m")
+for item in revised_menu:
+    print(item.title())
+
+
+
+
+
+#notes from Week 5 lecture for reference
 # bicycles = ["huffy", "trek", "yeti"]
 # print(bicycles[0])
 # bicycles[0]= "giant"
@@ -41,28 +93,3 @@
 # bicycles = ("trek", "cannondale", "raleigh")
 # print(bicycles)
 # bicycles
-
-
-bones = ["femur", "humerus", "hyoid", "tibia", "radius", "ulna"]
-print(bones)
-
-first_bone = bones[0]
-second_bone = bones[1]
-third_bone = bones[2]
-fourth_bone = bones[3]
-fifth_bone = bones[4]
-sixth_bone = bones[5]
-
-print(f"The first two items in the list are: {first_bone}, {second_bone}.")
-
-first_and_second_bone = f"{first_bone}, {second_bone}"
-print(f"The first two items in the list are: {first_and_second_bone}.")
-
-print(f"The middle two items in the list are: {third_bone}, {fourth_bone}.")
-
-middle_start = (len(bones) - 1) // 2
-middle_slice = bones[middle_start:middle_start + 2]
-print(f"The middle two items in the list are: {', '.join(middle_slice)}.")
-
-
-print(f"The first and last items in the list are: {first_bone}, {sixth_bone_bone}.")
